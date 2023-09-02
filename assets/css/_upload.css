@@ -1,0 +1,39 @@
+/* Style for the upload form */
+#upload-form {
+    display: flex; /* Display form elements in a row */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align form elements horizontally */
+    margin: 20px auto; /* Add margin and center the form horizontally */
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px; /* Add padding to the form */
+    background-color: #f9f9f9; /* Background color for the form */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 6px; /* Add rounded corners to the form */
+}
+
+#upload-label {
+    font-weight: bold; /* Make the label text bold */
+    margin-bottom: 10px; /* Add spacing below the label */
+}
+
+#csvFile {
+    width: 100%; /* Set the width of the file input to 100% of the container */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 15px; /* Add spacing below the file input */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 4px; /* Add rounded corners to the file input */
+}
+
+#upload-btn {
+    background-color: #007bff; /* Background color for the submit button */
+    color: #fff; /* Text color for the submit button */
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove the button border */
+    border-radius: 4px; /* Add rounded corners to the button */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+#upload-btn:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}

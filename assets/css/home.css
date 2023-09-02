@@ -1,0 +1,27 @@
+/* Style for the 'upload' section */
+#upload {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #ddd; /* Border to separate the section */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Margin to separate sections */
+}
+
+/* Style for the 'csv-search' section */
+#csv-search {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #ddd; /* Border to separate the section */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Margin to separate sections */
+}
+
+/* Style for the 'csvs-table' section */
+#csvs-table {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #ddd; /* Border to separate the section */
+    border-radius: 5px; /* Rounded corners */
+    /* Additional styles for tables, lists, or other content within this section can be added here */
+    margin-bottom: 20px; /* Margin to separate sections */
+}

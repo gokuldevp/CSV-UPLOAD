@@ -11,16 +11,16 @@ const csvSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    originalname: {
+    originalName: {
         type: String,
         required: true,
-        unique: true,
     },
     path:{
         type: String,
         required: true,
         unique: true,
     },
+
 }, { timestamps: true } );
 
 
@@ -35,8 +35,8 @@ let storage = multer.diskStorage({
 });
 
 csvSchema.statics.uploadedCsv = multer({ storage: storage }).single('csvFile');
-csvSchema.statics.avatarPath = CSV_PATH;
+csvSchema.statics.uploadPath = CSV_PATH;
 
-const Csv = mongoose.model('Csv', csvSchema);
+const CSV = mongoose.model('CSV', csvSchema);
 
-module.exports = Csv;
+module.exports = CSV;

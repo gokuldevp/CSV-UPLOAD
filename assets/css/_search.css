@@ -1,0 +1,38 @@
+/* Style for the search form */
+#search-form {
+    display: flex; /* Display form elements in a row */
+    align-items: center; /* Vertically center-align form elements */
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center-align the form horizontally and add margin */
+    padding: 15px; /* Add padding to the form */
+    background-color: #f4f4f4; /* Background color for the form */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 6px; /* Add rounded corners to the form */
+}
+
+#search-label {
+    font-weight: bold; /* Make the label text bold */
+    margin-right: 10px; /* Add spacing between label and input field */
+}
+
+#search {
+    flex-grow: 1; /* Allow the input to grow and fill available space */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 4px; /* Add rounded corners to the input field */
+    outline: none; /* Remove the default input outline on focus */
+}
+
+#search-btn {
+    background-color: #007bff; /* Background color for the submit button */
+    color: #fff; /* Text color for the submit button */
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove the button border */
+    border-radius: 4px; /* Add rounded corners to the button */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+#search-btn:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}

@@ -1,0 +1,17 @@
+/* CSS for the navigation bar */
+nav {
+    background-color: #007bff; /* Background color for the navigation bar */
+    padding: 10px 0; /* Add padding to the top and bottom for spacing */
+    margin-bottom: 10px;
+}
+
+#navbar-items {
+    color: #fff; /* Text color for the link */
+    text-decoration: none; /* Remove underlines from links */
+    margin-right: 20px; /* Add spacing between links */
+    font-weight: bold; /* Make the link text bold */
+}
+
+#navbar-items:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

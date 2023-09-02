@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/_csvs.css">
+
+<table>
+    <caption>CSV FILES || Count: <%= count %> || Displayed: <%= displayed %></caption>
+    <thead>
+        <tr>
+            <th>Sl No</th>
+            <th>File Name</th>
+            <th>Original Name</th>
+            <th>Open File</th>
+            <!-- Add more table headers as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        <% for (i in csvs) {%>
+            <% if (parseInt(i)< 100) { %>
+            <tr>
+                <td><%= parseInt(i)+1 %></td>
+                <td><%= csvs[i].fileName %></td>
+                <td><%= csvs[i].originalName %></td>
+                <td><a href="">View</a></td>
+                <!-- Add more table cells as needed -->
+            </tr>
+            <% } %>
+        <% } %>
+    </tbody>
+</table>

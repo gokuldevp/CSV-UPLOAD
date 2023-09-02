@@ -1,6 +1,18 @@
+<link rel="stylesheet" href="/css/home.css">
 
-<form action="/upload" method="post" enctype="multipart/form-data">
-    <label for="csvFile">Choose a CSV file:</label>
-    <input type="file" name="csvFile" id="csvFile" accept=".csv" required>
-    <input type="submit" value="Upload">
-</form>
+<div id="upload">
+
+    <%- include('_upload'); -%> 
+
+</div>
+
+<div id="csv-search">
+    <%- include('_search') -%>
+</div>
+
+<div id="csvs-table">
+
+    <%- include('_csvs'); -%> 
+
+</div>
+
