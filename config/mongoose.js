@@ -1,9 +1,8 @@
 // Importing the Mongoose library to interact with MongoDB
 const mongoose = require('mongoose');
-// const variables = require('../system_specific/variables')
 
-const uri = "mongodb://127.0.0.1:27017/CSV-Upload"
-
+// const uri = "mongodb://127.0.0.1:27017/CSV-Upload"
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri
 ,  {

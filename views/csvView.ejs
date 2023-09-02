@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/csvView.css"> <!-- Include a CSS file (csvView.css) -->
+
+<table id="view-table">
+    <caption id="table-title">File Name: <%= file.originalName %></caption> <!-- Display the file name -->
+    <thead>
+        <tr id="table-title">
+            <% tableHeaders.forEach((element) => { %>
+                <th id="table-title-items"><%= element %></th> <!-- Display table headers -->
+                <% }); %>
+        </tr>
+    </thead>
+    <tbody>
+        <% tableRows.forEach((row) => { %>
+            <tr id="column">
+                <% for (const key in row) { %>
+                <td id="row"><%= row[key] %></td> <!-- Display table rows and cells -->
+                <% } %>
+            </tr>
+            <% }); %>
+    </tbody>
+</table>
+

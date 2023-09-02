@@ -5,21 +5,19 @@
     <thead>
         <tr>
             <th>Sl No</th>
+            <th>File ID</th>
             <th>File Name</th>
-            <th>Original Name</th>
             <th>Open File</th>
-            <!-- Add more table headers as needed -->
         </tr>
     </thead>
     <tbody>
-        <% for (i in csvs) {%>
-            <% if (parseInt(i)< 100) { %>
+        <% for (i in csvs) { %>
+            <% if (parseInt(i) < 100) { %>
             <tr>
-                <td><%= parseInt(i)+1 %></td>
+                <td><%= parseInt(i) + 1 %></td>
                 <td><%= csvs[i].fileName %></td>
                 <td><%= csvs[i].originalName %></td>
-                <td><a href="">View</a></td>
-                <!-- Add more table cells as needed -->
+                <td><a href="/view/<%= csvs[i]._id %>">View</a></td>
             </tr>
             <% } %>
         <% } %>
