@@ -30,7 +30,7 @@ npm install express-ejs-layouts
 ```
 npm install dotenv
 ```
-8. csv-parser
+8. csv-parser [doc](https://www.npmjs.com/package/csv-parser)
 ```
 npm install csv-parser
 ```
