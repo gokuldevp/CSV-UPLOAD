@@ -14,7 +14,7 @@ exports.viewFile = async (req, res) => {
       return res.status(404).send("File id found");
     }
 
-    const filePath = path.join(__dirname, "..", file.path); 
+    const filePath = path.join(__dirname, "../uploads/csv", file.fileName); 
 
     // Check if the file exists before attempting to read it
     if (!fs.existsSync(filePath)) {
