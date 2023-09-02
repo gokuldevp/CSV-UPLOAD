@@ -2,8 +2,6 @@
 const mongoose = require('mongoose');
 // const variables = require('../system_specific/variables')
 
-
-// const uri = "mongodb+srv://gokuldevp123:XuWS5A260qpKAhE8@cluster0.hyrg27j.mongodb.net/?retryWrites=true&w=majority";
 const uri = "mongodb://127.0.0.1:27017/CSV-Upload"
 
 
