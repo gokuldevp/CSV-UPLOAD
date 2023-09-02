@@ -52,13 +52,6 @@ module.exports.uploadCsv = async (req, res) => {
     try {
         // Use Multer middleware to handle file uploads
 
-        const uploadPath = path.join(__dirname, "../uploads/csv"); 
-        if (!fs.existsSync(uploadPath)) {
-            // If the directory doesn't exist, create it
-            fs.mkdirSync(uploadPath);
-            console.log(`Directory '${directoryPath}' created.`);
-        }
-
         await CSV.uploadedCsv(req, res, async (err) => {
             if (err) {
                 console.error('******Multer Error!', err);
